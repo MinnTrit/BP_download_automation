@@ -7,8 +7,7 @@
 ![image](https://github.com/MinnTrit/BP_download_automation/assets/151976884/fc622b56-d8d6-482b-9f6f-004a1100cc18)
 
 # Diagram's breakdown
-```Notes```: 
-* This pipeline can be further implemented to the front-end through web framework in Python such as Django or Flask in order to trigger the code in the more user-friendly ways. At that time, we can run the code with ```headless = True``` option in PlayWright and use the proxy provided by ```Brightdata``` to help Playwright entered the website peacefully with the account.
+```Notes```: This pipeline can be further implemented to the front-end through web framework in Python such as Django or Flask in order to trigger the code in the more user-friendly ways. At that time, we can run the code with ```headless = True``` option in PlayWright and use the proxy provided by ```Brightdata``` to help Playwright entered the website peacefully with the account.
 * Requests made by the users: When the users request to the website, he/she will need to provide the ```sellers_id```, ```start_date```, and ```end_date``` parameters to launch the job
 * ```Automate.py``` received the request and prepare input: As the scrapper receives the parameter, it will perform these following actions:
   * For the ```start_date``` and ```end_date``` parameters, it will generate the date list within the range of the starting date and ending date for the scrapper
