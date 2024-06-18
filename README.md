@@ -11,8 +11,8 @@
 ### Workflow:
 1. Requests made by the users: When the users request to the website, he/she will need to provide the ```sellers_id```, ```start_date```, and ```end_date``` parameters to launch the job
 2. ```Automate.py``` received the request and prepare input: As the scrapper receives the parameter, it will perform these following actions:
-  * For the ```start_date``` and ```end_date``` parameters, it will generate the date list within the range of the starting date and ending date for the scrapper
-  * For the ```seller_id``` parameters it will find the according ```seller_name``` and ```seller_type``` of that seller to filter out the pannel on the website
+   * For the ```start_date``` and ```end_date``` parameters, it will generate the date list within the range of the starting date and ending date for the scrapper
+   * For the ```seller_id``` parameters it will find the according ```seller_name``` and ```seller_type``` of that seller to filter out the pannel on the website
 3. ```Discord_bot.py``` prints the launched log in the server: After the prepared input has been made, the ```Discord_bot.py``` will receive outputs to launch the logs
 4. ```Automate.py``` starts scrapping to save the file to the ```Temporary``` folder and concat the file to the dataframe: After the file being downloaded and stored in this folder, the contents of the file will be stored in the dataframe to be saved in the database later
 5. ```Automate.py``` passes the file to ```Upload.py``` to store back-up files: After storing the file in the dataframe, the scrapper will pass this file to ```Upload.py``` so that it can use this file and upload to Google Drive for storage, after the file has been uploaded, ```Upload.py``` will also remove this file within the ```Temporary``` folder to clean up
